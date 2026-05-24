@@ -1,0 +1,341 @@
+{
+  "name": "network-lab",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "mgmt-net",
+        "bridge": "br-6691026558df",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "pc1": {
+      "index": "0",
+      "shortname": "pc1",
+      "longname": "clab-network-lab-pc1",
+      "fqdn": "pc1.network-lab.io",
+      "group": "",
+      "labdir": "/home/kali/network-lab/topology/clab-network-lab/pc1",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.21",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-6691026558df",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/kali/network-lab/topology/clab-network-lab/pc1",
+        "clab-node-longname": "clab-network-lab-pc1",
+        "clab-node-name": "pc1",
+        "clab-node-type": "",
+        "clab-owner": "kali",
+        "clab-topo-file": "/home/kali/network-lab/topology/lab-topology.yml",
+        "containerlab": "network-lab",
+        "role": "host"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc2": {
+      "index": "1",
+      "shortname": "pc2",
+      "longname": "clab-network-lab-pc2",
+      "fqdn": "pc2.network-lab.io",
+      "group": "",
+      "labdir": "/home/kali/network-lab/topology/clab-network-lab/pc2",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.22",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-6691026558df",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/kali/network-lab/topology/clab-network-lab/pc2",
+        "clab-node-longname": "clab-network-lab-pc2",
+        "clab-node-name": "pc2",
+        "clab-node-type": "",
+        "clab-owner": "kali",
+        "clab-topo-file": "/home/kali/network-lab/topology/lab-topology.yml",
+        "containerlab": "network-lab",
+        "role": "host"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc3": {
+      "index": "2",
+      "shortname": "pc3",
+      "longname": "clab-network-lab-pc3",
+      "fqdn": "pc3.network-lab.io",
+      "group": "",
+      "labdir": "/home/kali/network-lab/topology/clab-network-lab/pc3",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.23",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-6691026558df",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/kali/network-lab/topology/clab-network-lab/pc3",
+        "clab-node-longname": "clab-network-lab-pc3",
+        "clab-node-name": "pc3",
+        "clab-node-type": "",
+        "clab-owner": "kali",
+        "clab-topo-file": "/home/kali/network-lab/topology/lab-topology.yml",
+        "containerlab": "network-lab",
+        "role": "host"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc4": {
+      "index": "3",
+      "shortname": "pc4",
+      "longname": "clab-network-lab-pc4",
+      "fqdn": "pc4.network-lab.io",
+      "group": "",
+      "labdir": "/home/kali/network-lab/topology/clab-network-lab/pc4",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.24",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-6691026558df",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/kali/network-lab/topology/clab-network-lab/pc4",
+        "clab-node-longname": "clab-network-lab-pc4",
+        "clab-node-name": "pc4",
+        "clab-node-type": "",
+        "clab-owner": "kali",
+        "clab-topo-file": "/home/kali/network-lab/topology/lab-topology.yml",
+        "containerlab": "network-lab",
+        "role": "host"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r1": {
+      "index": "4",
+      "shortname": "r1",
+      "longname": "clab-network-lab-r1",
+      "fqdn": "r1.network-lab.io",
+      "group": "",
+      "labdir": "/home/kali/network-lab/topology/clab-network-lab/r1",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.10",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-6691026558df",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/kali/network-lab/topology/clab-network-lab/r1",
+        "clab-node-longname": "clab-network-lab-r1",
+        "clab-node-name": "r1",
+        "clab-node-type": "",
+        "clab-owner": "kali",
+        "clab-topo-file": "/home/kali/network-lab/topology/lab-topology.yml",
+        "containerlab": "network-lab",
+        "role": "router"
+      },
+      "port-bindings": [
+      ]
+    },
+    "sw1": {
+      "index": "5",
+      "shortname": "sw1",
+      "longname": "clab-network-lab-sw1",
+      "fqdn": "sw1.network-lab.io",
+      "group": "",
+      "labdir": "/home/kali/network-lab/topology/clab-network-lab/sw1",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-6691026558df",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/kali/network-lab/topology/clab-network-lab/sw1",
+        "clab-node-longname": "clab-network-lab-sw1",
+        "clab-node-name": "sw1",
+        "clab-node-type": "",
+        "clab-owner": "kali",
+        "clab-topo-file": "/home/kali/network-lab/topology/lab-topology.yml",
+        "containerlab": "network-lab",
+        "role": "switch"
+      },
+      "port-bindings": [
+      ]
+    },
+    "sw2": {
+      "index": "6",
+      "shortname": "sw2",
+      "longname": "clab-network-lab-sw2",
+      "fqdn": "sw2.network-lab.io",
+      "group": "",
+      "labdir": "/home/kali/network-lab/topology/clab-network-lab/sw2",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-6691026558df",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/kali/network-lab/topology/clab-network-lab/sw2",
+        "clab-node-longname": "clab-network-lab-sw2",
+        "clab-node-name": "sw2",
+        "clab-node-type": "",
+        "clab-owner": "kali",
+        "clab-topo-file": "/home/kali/network-lab/topology/lab-topology.yml",
+        "containerlab": "network-lab",
+        "role": "switch"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "r1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:7d:ae:df",
+          "peer": "z"
+        },
+        "z": {
+          "node": "sw1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:ec:7c:4c",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:01:27:5a",
+          "peer": "z"
+        },
+        "z": {
+          "node": "sw2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:8b:be:4e",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "sw1",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:13:76:5d",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pc1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:de:e3:2f",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "sw1",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:54:fb:c3",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pc2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:ce:f5:3b",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "sw2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:db:cb:1d",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pc3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:a1:b3:7a",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "sw2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:1a:18:ec",
+          "peer": "z"
+        },
+        "z": {
+          "node": "pc4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:37:99:58",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

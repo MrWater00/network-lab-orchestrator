@@ -1,0 +1,47 @@
+---
+- name: Configure IP addresses on all hosts
+  hosts: hosts_group
+  gather_facts: false
+  tasks:
+
+    - name: Assign IP to eth1 on PC1
+      raw: ip addr add 192.168.1.10/24 dev eth1 && ip link set eth1 up
+      when: inventory_hostname == 'clab-network-lab-pc1'
+      ignore_errors: yes
+
+    - name: Assign IP to eth1 on PC2
+      raw: ip addr add 192.168.1.20/24 dev eth1 && ip link set eth1 up
+      when: inventory_hostname == 'clab-network-lab-pc2'
+      ignore_errors: yes
+
+    - name: Assign IP to eth1 on PC3
+      raw: ip addr add 192.168.2.10/24 dev eth1 && ip link set eth1 up
+      when: inventory_hostname == 'clab-network-lab-pc3'
+      ignore_errors: yes
+
+    - name: Assign IP to eth1 on PC4
+      raw: ip addr add 192.168.2.20/24 dev eth1 && ip link set eth1 up
+      when: inventory_hostname == 'clab-network-lab-pc4'
+      ignore_errors: yes
+
+- name: Configure IP addresses on switches
+  hosts: switches
+  gather_facts: false
+  tasks:
+
+    - name: Bring up all switch interfaces
+      raw: ip link set eth1 up && ip link set eth2 up && ip link set eth3 up
+      ignore_errors: yes
+
+- name: Configure IP addresses on router
+  hosts: routers
+  gather_facts: false
+  tasks:
+
+    - name: Configure R1 eth1 - connects to SW1 subnet
+      raw: ip addr add 192.168.1.1/24 dev eth1 && ip link set eth1 up
+      ignore_errors: yes
+
+    - name: Configure R1 eth2 - connects to SW2 subnet
+      raw: ip addr add 192.168.2.1/24 dev eth2 && ip link set eth2 up
+      ignore_errors: yes
